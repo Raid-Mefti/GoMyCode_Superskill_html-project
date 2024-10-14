@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Home &nbsp&nbsp&nbsp About me &nbsp&nbsp&nbsp Work &nbsp&nbsp&nbsp Resume &nbsp&nbsp&nbsp Contact&nbsp&nbsp&nbsp</h1><!--The navigation bar. I put everything inside the same <h1> because I'm limited due to not being able to use CSS. I wanted to put everything inside <a> but then the text would be too small without for a navigation bar-->
+      
+            <select onchange="window.location.href=this.value;"> <!--A drop down menu-->
+                <option value="">Our partners</option>
+
+                <option value="https://www.google.com/?hl=fr">Google</option>
+        
+                <option value="https://www.youtube.com/">YouTube</option>
+        
+                <option value="https://gomycode.com/dz/fr/">GoMyCode</option>
+                
+              </select>
+        </nav>
+        <br>
+    </header>
+    <br><br>
+    <main> 
+        <div>
+            <h2>About me</h2>
+            <img src="images/profile_picture.png" alt="Profile picture">
+            <p>Professional procrastinator, tuna enjoyer, soft fur and engine-like purr, I'm the most cat that a cat can be.
+                <br><br>Ever feel lonely ? Recently lost a relative ? Having problems with your work ? Your love life's not working out ?
+                <br><br>Looking for a quick solution ? You've knocked on the wrong door, really. You should seek a psychologist, I'm just a cat.
+                <br><br>What I can do, however, is demand constant attention and feeding, which will make you temporarily forget about your problems and the fact that you're just a bone squeleton, full of organs and coated with skin, bossed around by your brain through an over complicated nervous system, all while orbitting a relatively small star on a giant rock heading eventually to its own doom.
+                <br><br>Click <b><a href="#work"> here </a></b>to see if you can afford me. Payment in advance.
+                <!--the link will take you to another section inside the same html page-->
+            </p>
+        </div>
+        <br><br><br><br>
+
+        <div id="work">
+            <h2>Work</h2>
+            <p>You're way out of your league, pal.
+                <br><br>Before you can even think about whether you can afford me, first you have to list me all sixty eight thousand four hundred and thirty two rules about how to treat your cat properly.
+                <br><br>Here, I'm giving you this one for free, only sixty eight thousand four hundred and thirty one left :
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UVAmlSGH-MM?si=bjuDhyz7LIFrEJaN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>If you wish to proceed forward, click <b><a href="#contact"> here </a></b> to contact me. Payment in advance. Payment in tuna is acceptable. Payment in petting is not acceptable although highly appreciated.</p>
+        </div>
+        <br><br><br><br>
+
+
+        <div>
+            <h2>Resume</h2>
+            <p>In this table, you will find a short list of some very satisfied clients.</p>
+            <table border="10">
+                <tr>
+                  <th></th>
+                  <th>just a human, who cares</th>
+                  <th>Abdel Hamid Tayeb Mohamed Cherif Eddine</th>
+                  <th>Khalil Ibn Abi Sylvestre</th>
+                </tr>
+          
+                <tr>
+                  <td>What they look like</td>
+                  <td><img src="images/hidethepainharold.jpg" alt=""></td>
+                  <td><img src="images/profilecat1.png" alt=""></td>
+                  <td><img src="images/profilecat2.png" alt=""></td>
+                </tr>
+          
+                <tr>
+                <td>Testimony</td>
+                  <td>Please don't murder me I swear I'll leave a positive feedback.<br> Please let my family go.</td>
+                  <td>The best cat in town. He does what he does best : being a cat.<br> 10/10 would hire again. </td>
+                  <td>My life have changed since I've met him.<br> He's just one of those people who will inspire you.<br> he's on par with Sun Tzu and Da Vinci.</td>
+                </tr>
+          
+              </table>
+        </div>
+        <br><br><br><br>
+
+
+
+        <div> <!--This div is about Contact-->
+            <form>
+                <h2 id="contact">Contact</h2>
+                <p>Enter your informations and wait for me to reply. Average response time : 3 to 5 years.</p>
+
+                <label>First Name:</label>
+                <input type="text" name="firstName" />
+          
+                <label>Last Name:</label>
+                <input type="text" name="lastName" id="lastName" />
+
+                <label>Gender</label>
+                <select onchange="window.location.href=this.value;"> <!--A drop down menu-->
+                    <option value="">Male</option>
+                    <option value="">Not important</option>
+                    <option value="">Dunno, angry lama probably</option>
+                </select>
+          
+                <label>Email:</label>
+                <input type="email" name="lastName" id="lastName" />
+
+                <br>                <br>
+
+                <button type="submit">Submit</button>
+                <!-- This button will submit the form-->
+                <br>
+                <br>
+
+          
+              </form>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <br><br><br><br><br><br>
+
+        <p><b>Address :</b> Bâtiment  √37 Val de l'Hydre, Singapour, Jupiter.</p>
+        <p><b>Electronic address :</b> ImDrivingACatCat@winkwink.com</p>
+        <p>I honestly don't really know what else to put inside the footer</p>
+        <audio src="ost-debut.mp3" autoplay controls> 
+            <!-- There may be issues with the autoplay if your browser does not support it, notably Google Chrome. -->
+           </audio> 
+           <p>This is supposed to autoplay the moment you get into the page, unless you're using Google Chrom or other browser who don't like cats.</p>
+
+    </footer>
+
+
+</body>
+</html>
