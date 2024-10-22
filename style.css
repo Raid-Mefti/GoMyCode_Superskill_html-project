@@ -1,0 +1,119 @@
+body{
+    font-family: 'Roboto';
+    margin: 0;
+    background-color: rgb(229,229,229);
+    color: #B7673C;
+    padding: 20px;
+}
+body a{
+    text-decoration: none;
+    color: #1a1a1a;
+
+}
+header nav{
+    display: flex; /*In the exercise, they asked us to display it inline. But they also asked us to be creative, so here I am being creative.*/
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+header nav div a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 80px;
+    color: #B7673C;
+}
+header nav div a:hover{
+    border-bottom: 3px solid rgb(254,196,0);
+}
+div > select{
+    border: 2px solid #1a1a1a;
+    background-color: rgb(229,229,229);
+    font-size: 24px;
+    color: #B7673C;
+} 
+select{
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    outline: none;
+}
+select:focus{
+    background-color: #1a1a1a;
+    color: rgb(229,229,229);
+}
+select:after{
+    color: #B7673C;
+    background-color: rgb(229,229,229);
+}
+option{
+    margin-top: 100px;
+}
+
+
+
+.profile_image{
+    border: 5px solid rgb(254,196,0);
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+main div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.h2_title{
+    font-size: 38px;
+}
+main p{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    text-justify: inter-word;
+    font-size: 20px;
+}
+#work{
+    display: flex;
+    flex-direction: column;
+}
+
+.video{
+    border: 5px solid rgb(254,196,0);
+    margin: 20px auto 20px auto;
+}
+.table_paragraph{
+    margin: 20px 20px 20px 20px;
+    font-size: 24px;
+    width: 100%;
+}
+
+.your_informations{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+.your_informations > select,label,input{
+    width: 100%;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 10px;
+}
+form button{
+    border: 2px solid #1a1a1a;
+    background-color: rgb(229,229,229);
+    font-size: 24px;
+    color: #B7673C;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+}
+form button:hover{
+    color: #1a1a1a;
+    background-color: #B7673C;
+}
+

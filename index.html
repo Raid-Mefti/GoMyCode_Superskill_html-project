@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <header>
         <nav>
-            <h1>Home &nbsp&nbsp&nbsp About me &nbsp&nbsp&nbsp Work &nbsp&nbsp&nbsp Resume &nbsp&nbsp&nbsp Contact&nbsp&nbsp&nbsp</h1><!--The navigation bar. I put everything inside the same <h1> because I'm limited due to not being able to use CSS. I wanted to put everything inside <a> but then the text would be too small without for a navigation bar-->
-      
-            <select onchange="window.location.href=this.value;"> <!--A drop down menu-->
-                <option value="">Our partners</option>
+            <div>
+                <a href="">Home</a>
+                <a href="">About me</a>
+                <a href="">Work</a>
+                <a href="">Resume</a>
+                <a href="">Contact</a>
+            </div>
 
-                <option value="https://www.google.com/?hl=fr">Google</option>
-        
-                <option value="https://www.youtube.com/">YouTube</option>
-        
-                <option value="https://gomycode.com/dz/fr/">GoMyCode</option>
-                
-              </select>
+            <div class="select">
+                <select onchange="window.location.href=this.value;"> <!--A drop down menu-->
+                    <option value="">Our partners</option>
+    
+                    <option value="https://www.google.com/?hl=fr">Google</option>
+            
+                    <option value="https://www.youtube.com/">YouTube</option>
+            
+                    <option value="https://gomycode.com/dz/fr/">GoMyCode</option>
+                    
+                  </select>
+            </div>
+            
         </nav>
-        <br>
     </header>
     <br><br>
     <main> 
         <div>
-            <h2>About me</h2>
-            <img src="images/profile_picture.png" alt="Profile picture">
+            <h2 class="h2_title">About me</h2>
+            <img class ="profile_image" src="images/profile_picture.png" alt="Profile picture">
             <p>Professional procrastinator, tuna enjoyer, soft fur and engine-like purr, I'm the most cat that a cat can be.
                 <br><br>Ever feel lonely ? Recently lost a relative ? Having problems with your work ? Your love life's not working out ?
                 <br><br>Looking for a quick solution ? You've knocked on the wrong door, really. You should seek a psychologist, I'm just a cat.
@@ -39,20 +51,20 @@
         <br><br><br><br>
 
         <div id="work">
-            <h2>Work</h2>
+            <h2 class="h2_title">Work</h2>
             <p>You're way out of your league, pal.
                 <br><br>Before you can even think about whether you can afford me, first you have to list me all sixty eight thousand four hundred and thirty two rules about how to treat your cat properly.
                 <br><br>Here, I'm giving you this one for free, only sixty eight thousand four hundred and thirty one left :
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UVAmlSGH-MM?si=bjuDhyz7LIFrEJaN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/UVAmlSGH-MM?si=bjuDhyz7LIFrEJaN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p>If you wish to proceed forward, click <b><a href="#contact"> here </a></b> to contact me. Payment in advance. Payment in tuna is acceptable. Payment in petting is not acceptable although highly appreciated.</p>
         </div>
         <br><br><br><br>
 
 
         <div>
-            <h2>Resume</h2>
-            <p>In this table, you will find a short list of some very satisfied clients.</p>
+            <h2 class="h2_title">Resume</h2>
+            <p class="table_paragraph">In this table, you will find a short list of some very satisfied clients.</p>
             <table border="10">
                 <tr>
                   <th></th>
@@ -82,15 +94,16 @@
 
 
         <div> <!--This div is about Contact-->
-            <form>
-                <h2 id="contact">Contact</h2>
-                <p>Enter your informations and wait for me to reply. Average response time : 3 to 5 years.</p>
+            <h2 class="h2_title" id="contact">Contact</h2>
+            <p class="table_paragraph">Enter your informations and wait for me to reply. Average response time : 3 to 5 years.</p>
+
+            <form class="your_informations">
 
                 <label>First Name:</label>
-                <input type="text" name="firstName" />
+                <input type="text" name="firstName" placeholder="&nbsp&nbsp&nbsp First Name"/>
           
                 <label>Last Name:</label>
-                <input type="text" name="lastName" id="lastName" />
+                <input type="text" name="lastName" placeholder="&nbsp&nbsp&nbsp Last Name" />
 
                 <label>Gender</label>
                 <select onchange="window.location.href=this.value;"> <!--A drop down menu-->
@@ -100,7 +113,7 @@
                 </select>
           
                 <label>Email:</label>
-                <input type="email" name="lastName" id="lastName" />
+                <input type="email" name="lastName" placeholder="&nbsp&nbsp&nbsp your_email@example.cat" />
 
                 <br>                <br>
 
